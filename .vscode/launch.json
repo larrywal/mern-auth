@@ -7,9 +7,16 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
+      "name": "Launch Chrome",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\server.js"
     }
   ]
 }
